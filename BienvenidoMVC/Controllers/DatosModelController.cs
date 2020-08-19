@@ -18,6 +18,7 @@ namespace BienvenidoMVC.Controllers
             objEstudiante.Celular = "871 761 8888";
             objEstudiante.Correo = "pattyCastillo@hotmail.com";
             objEstudiante.FechaMatricula = new DateTime(2020, 08, 19);
+            objEstudiante.Carrera = "Ingeniero de Sistemas";
 
             // ENVÍO DEL OBJETO
             return View(objEstudiante);

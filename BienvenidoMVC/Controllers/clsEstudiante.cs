@@ -12,5 +12,6 @@ namespace BienvenidoMVC.Controllers
         public string Celular { get; set; }
         public string Correo { get; set; }
         public DateTime FechaMatricula { get; set; }
+        public string Carrera { get; set; }
     }
 }
