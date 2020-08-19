@@ -1,0 +1,25 @@
+﻿@* Para pasar datos por modelo hay que usar el comando "Model" de Razor *@
+@model BienvenidoMVC.Controllers.clsEstudiante
+@{
+    ViewBag.Title = "LECCIÓN 9.2 MVC : paso de datos por  [Model]";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<p>
+    Nombre del Estudiante: @Model.Nombre;
+</p>
+<p>
+    Apellidos del Estudiante: @Model.Apellidos;
+</p>
+<p>
+    Celular: @Model.Celular ;
+</p>
+<p>
+    Correo Electrónico: @Model.Correo;
+</p>
+<p>
+    Fecha de Matrícula: @Model.FechaMatricula;
+</p>
+
+
