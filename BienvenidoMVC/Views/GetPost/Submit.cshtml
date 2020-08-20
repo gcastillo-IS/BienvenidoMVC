@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "LECCIÓN 9.2.4 Paso de datos []";
+}
+
+<h2>Submit</h2>
+
+@*COMENTARIOS ----*@
+@*Ejecutamos el botón Submit -> ACTION , CONTROLLER, método de paso de datos *@
+@using (Html.BeginForm("Submit","GetPost", FormMethod.Get))
+{
+    <table>
+        <tr>
+            <td>Nombre de Usuario:</td>
+            <td>@Html.TextBox("parNombreUsuario")</td>
+            <br />
+        </tr>
+
+        <tr>
+            <td>Contraseña: </td>
+            <td>@Html.TextBox("parPwd")<br /></td>
+        </tr>
+        @*EL BOTÓN*@
+        <tr>
+            <td colspan="2"><input type="submit" value="Submit" /></td>
+        </tr>
+    </table>
+}
+
+<h3 style="color:blue">
+    User: @ViewBag.NombreUsuario<br />
+    Contraseña: @ViewBag.Pwd<br />
+</h3>
